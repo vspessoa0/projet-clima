@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -20,7 +20,7 @@ body {
     background-color: #232931;
     color: #fff;
     border-radius: 25px;
-    box-shadow: 0 5 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .left-info {
@@ -35,7 +35,7 @@ body {
     background-size: cover;
     transform: scale(1.03) perspective(200px);
     cursor: pointer;
-    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px -10px rrgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -81,4 +81,82 @@ body {
 
 .right-info {
     float: right;
+    position: relative;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.day-info {
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.day-info div:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.day-info div .title {
+    font-weight: 700;
+}
+
+.day-info div .value {
+    float: right;
+}
+
+.days-list {
+    display: flex;
+    list-style: none;
+    margin: 10px 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+
+.days-list li {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.days-list li:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #37474f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.days-list .bx {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.days-list .day-temp {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.btn-container {
+    padding: 25px 35px;
+}
+
+.loc-button {
+    outline: none;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #0d47a1;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: all 0.3 ease;
+}
+
+.loc-button:hover {
+    background-color: #1a237e;
 }
